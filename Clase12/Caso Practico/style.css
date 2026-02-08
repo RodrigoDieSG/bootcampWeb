@@ -1,0 +1,70 @@
+:root {
+    --primary: #4f46e5;
+    --secondary: #10b981;
+    --error: #ef4444;
+    --bg: #f3f4f6;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.auth-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    transition: all 0.3s ease;
+}
+
+.auth-card--hidden { display: none; }
+.auth-card--large { width: 500px; }
+
+.auth-card__title { margin: 0 0 1.5rem; color: #1f2937; text-align: center; }
+
+.auth-card__input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.auth-card__button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.auth-card__button--login { background-color: var(--primary); }
+.auth-card__button--register { background-color: var(--secondary); }
+.auth-card__button--get { background-color: #3b82f6; margin-top: 1rem; }
+.auth-card__button--post { background-color: #8b5cf6; }
+.auth-card__button--logout { background-color: #6b7280; margin-top: 2rem; }
+
+.auth-card__link { color: var(--primary); cursor: pointer; text-decoration: underline; }
+.auth-card__error { color: var(--error); font-size: 0.85rem; text-align: center; }
+
+.auth-card__result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.8rem;
+}

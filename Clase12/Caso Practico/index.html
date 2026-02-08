@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Autenticación API</title>
+    <link rel="stylesheet" href="style.css"> <!-- Estilos CSS -->
+</head>
+<body>
+
+    <div class="auth-container"> <!-- Contenedor Principal -->
+        <section id="loginSection" class="auth-card"> <!-- Tarjeta de Login -->
+            <h2 class="auth-card__title">Iniciar Sesión</h2> <!-- Título -->
+            <div class="auth-card__form"> <!-- Formulario de Login -->
+                <input type="text" id="loginUser" placeholder="Usuario" class="auth-card__input"> <!-- Campo Usuario -->
+                <input type="password" id="loginPass" placeholder="Contraseña" class="auth-card__input"> <!-- Campo Contraseña -->
+                <button id="btnLogin" class="auth-card__button auth-card__button--login">Entrar</button> <!-- Botón Login -->
+                <p class="auth-card__text">¿No tienes cuenta? <span id="goRegister" class="auth-card__link">Regístrate aquí</span></p>
+                <p id="loginError" class="auth-card__error"></p> <!-- Mensaje de Error -->
+            </div>
+        </section>
+
+        <section id="registerSection" class="auth-card auth-card--hidden"> <!-- Tarjeta de Registro -->
+            <h2 class="auth-card__title">Crear Cuenta</h2> <!-- Título -->
+            <div class="auth-card__form"> <!-- Formulario de Registro -->
+                <input type="text" id="regUser" placeholder="Nuevo Usuario" class="auth-card__input"> <!-- Campo Nuevo Usuario -->
+                <input type="password" id="regPass" placeholder="Nueva Contraseña" class="auth-card__input"> <!-- Campo Nueva Contraseña -->
+                <input type="number" id="regAge" placeholder="Edad" class="auth-card__input"> <!-- Campo Edad -->
+                <button id="btnSaveUser" class="auth-card__button auth-card__button--register">Registrar</button> <!-- Botón Registrar -->
+                <p class="auth-card__text"><span id="goLogin" class="auth-card__link">Volver al login</span></p> <!-- Enlace Volver al Login -->
+            </div>
+        </section>
+
+        <section id="dashboardSection" class="auth-card auth-card--hidden auth-card--large"> <!-- Tarjeta de Dashboard -->
+            <h2 class="auth-card__title">Bienvenido, <span id="displayUser"></span>!</h2> <!-- Título de Bienvenida -->
+            <p class="auth-card__description">Has ingresado correctamente al sistema.</p> <!-- Descripción de sistema al entrar-->
+            
+            <div class="auth-card__actions"> <!-- Botones de acciones -->
+                <button id="btnGet" class="auth-card__button auth-card__button--get">Petición GET (Usuarios)</button> <!-- Botón GET -->
+                <button id="btnPost" class="auth-card__button auth-card__button--post">Petición POST (Crear Post)</button> <!-- Botón POST -->
+                <button id="btnLogout" class="auth-card__button auth-card__button--logout">Cerrar Sesión</button> <!-- Botón Logout -->
+            </div>
+
+            <div id="apiResult" class="auth-card__result"></div> <!-- Resultado de las peticiones API -->
+        </section>
+    </div>
+
+    <script src="script.js"></script> <!-- conexión JavaScript -->
+</body>
+</html>

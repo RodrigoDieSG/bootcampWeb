@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio con jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery CDN -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a archivo CSS -->
+</head>
+<body>
+
+    <section class="user-manager"> <!-- Bloque principal -->
+        <header class="user-manager__header"> <!-- Elemento del bloque -->
+            <h1 class="user-manager__title">Directorio de Usuarios</h1> <!-- Elemento del bloque -->
+            <button id="btnUsuarios" class="user-manager__button user-manager__button--action"> <!-- Elemento del bloque con modificador -->
+                Cargar Nombres <!-- Texto del botón -->
+            </button>
+        </header>
+        
+        <ul id="lista-usuarios" class="user-manager__list"> <!-- Elemento del bloque -->
+            <!-- Los nombres de usuarios se cargarán aquí -->
+            </ul>
+    </section>
+
+    <script src="script.js"></script> <!-- Enlace a archivo JS -->
+</body>
+</html>

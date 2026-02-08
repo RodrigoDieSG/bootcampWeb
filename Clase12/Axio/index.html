@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios con Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Incluyendo Axios desde CDN -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a archivo CSS -->
+</head>
+<body>
+
+    <main class="user-card"> <!-- Bloque principal -->
+        <header class="user-card__header">
+            <h1 class="user-card__title">Lista de Usuarios</h1>
+            <p class="user-card__description">Consulta de datos mediante Axios</p> <!-- Elementos del header -->
+        </header>
+
+        <div class="user-card__actions"> <!-- Elemento de acciones -->
+            <button id="btnFetch" class="user-card__button user-card__button--primary"> <!-- Modificador para botón primario -->
+                Cargar Usuarios
+            </button>
+        </div>
+
+        <ul id="userList" class="user-card__list"> <!-- Elemento de lista -->
+            <!-- Los usuarios se cargarán aquí dinámicamente -->
+            </ul>
+    </main>
+
+    <script src="script.js"></script> <!-- Enlace a archivo JS -->
+</body>
+</html>

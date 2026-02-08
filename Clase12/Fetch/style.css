@@ -1,0 +1,78 @@
+/* BLOQUE */
+.user-directory {
+    max-width: 480px;
+    margin: 60px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', -apple-system, sans-serif;
+    overflow: hidden;
+}
+
+/* ELEMENTOS */
+.user-directory__header {
+    background: #5e35b1;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.user-directory__title {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+}
+
+.user-directory__subtitle {
+    margin: 8px 0 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.user-directory__controls {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.user-directory__button {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* MODIFICADOR */
+.user-directory__button--fetch {
+    background-color: #7c4dff;
+    color: white;
+}
+
+.user-directory__button--fetch:hover {
+    background-color: #651fff;
+    box-shadow: 0 4px 12px rgba(124, 77, 255, 0.3);
+}
+
+.user-directory__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user-directory__item {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f8f8f8;
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-directory__item:last-child {
+    border-bottom: none;
+}
