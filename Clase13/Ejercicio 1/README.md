@@ -1,0 +1,3 @@
+En mi opinión el uso del lenguaje python radica en que se basa más en la lógica, además de usar un luenguaje más sencillo, python ayuda a optimizar procesos a comparación de otros lenguajes; asimismo, python principalmente dentro del desarrollo web ayuda mucho en las creaciones de aplicaciones web; en la parte lógica del backend.
+
+A diferencia de cada lenguaje por ejemplo html que se enfoca más en la estructura de la página web y CSS en el diseño, pero que su lenguaje requiere más estructuras para su funcionamiento.

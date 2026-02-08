@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+
+        <header class="header">
+            <div class="header__logo">
+              <img src="Imagen/Clover.png" alt="Logotipo" class="header__logo-img">
+            </div>
+            <div class="header__search">
+                <form class="search-form">
+                    <label for="buscar" class="search-form__label">Buscar:</label>
+                    <input type="text" id="buscar" class="search-form__input">
+                </form>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="Inicio" class="main-nav__link">Inicio</a></li>
+                <li class="main-nav__item"><a href="Seccion1" class="main-nav__link">Sección 1</a></li>
+                <li class="main-nav__item"><a href="Seccion2" class="main-nav__link">Sección 2</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-layout">
+
+            <aside class="sidebar sidebar--left">
+                <section class="block">
+                    <h3 class="block__title">Noticias</h3>
+                    <ul class="link-list">
+                        <li><span class="date">31/12/2025</span> <a href="#">Inicio de las pruebas para guerrero</a></li>
+                        <li><span class="date">15/12/2025</span> <a href="#">¿Gromorio con el trebol de 4 hojas?</a></li>
+                        <li><span class="date">01/12/2025</span> <a href="#">Selección de Grimorio</a></li>
+                    </ul>
+                </section>
+
+                <section class="block">
+                    <h3 class="block__title">Enlaces relacionados</h3>
+                    <ul class="link-list">
+                        <li><a href="Contacto">Contacto</a></li>
+                        <li><a href="Servicios">Servicios</a></li>
+                        <li><a href="Requisitos">Requisitos</a></li>
+                    </ul>
+                </section>
+
+                <section class="block block--ad">
+                    <h3 class="block__title">Publicidad</h3>
+                    <p>El día 25 de diciembre, el Rey Mago anunció la inscripción para la selección a los 9 escuadrones</p>
+                    <p>La selección se realizará en el Templo de la Magia y será dirigido por el lider del escuadrón Amanecer Dorado, William Vangeance como representación del Rey Mago.</p>
+                    <a href="#" class="read-more">Seguir leyendo...</a>
+                </section>
+            </aside>
+
+            <section class="content-center">
+                <article class="article">
+                    <h2 class="article__title">Yuno el usuario que obtuvo el Grimorio del trebol de 4 hojas</h2>
+                    <div class="article__body">
+                        <img src="Imagen/yuno.jpg" alt="Yuno" class="article__image">
+                        <div class="article__text">
+                            <p>Durante la selección de grimorio, Yuno se destacó por su habilidad y determinación. Su grimorio del trébol de 4 hojas fue elegido como uno de los más poderosos del reino.</p>
+                        </div>
+                    </div>
+                    <p>La historia de Yuno se convirtió en un ejemplo de valentía y habilidad para todos los demás, ya que el trebol de 3 hojas simboliza la fe, esperanza, amor, pero la cuarta hoja representa la buena suerte.</p>
+                    <a href="#" class="read-more">Seguir leyendo...</a>
+                </article>
+
+                <article class="article">
+                    <h2 class="article__title">Conoce los diferentes escuadrones del Reino</h2>
+                    <div class="article__body">
+                        <img src="Imagen/Escuadrones.jpg" alt="Escuadrones del reino" class="article__image">
+                        <div class="article__text">
+                            <p>Los escuadrones del reino son grupos de magos que se especializan en diferentes tipos de magia. Cada escuadrón tiene su propio líder y misión.</p>
+                            <p>Entre los diferentes escuadrones podemos encontrar: Toros Negros, Amanecer Dorado, Leones Carmesí, Aguilas Plateadas, Rosas Azules, Ciervo Aguamarino, Orca Púrpura, Pavo Real Coral y Mantis Verdes</p>
+                        </div>
+                    </div>
+                    <p>Cada uno de ellos tiene sus propias características y habilidades únicas.</p>
+                    <a href="#" class="read-more">Seguir leyendo...</a>
+                </article>
+            </section>
+
+            <aside class="sidebar sidebar--right">
+                <section class="block block--highlight">
+                    <h3 class="block__title--highlight">Historia del Rey Mago</h3>
+                    <div class="block__content">
+                        <p>Julius Novachrono ostenta el título de Rey Mago del Reino del Trébol y también es quien lidera la orden de los caballeros mágicos, lidera los asuntos militares del reino para su seguridad.</p>
+                        <a href="#" class="read-more">Seguir leyendo...</a>
+                    </div>
+                </section>
+                <section class="block block--highlight">
+                    <h3 class="block__title--highlight">Reinos del continente</h3>
+                    <div class="block__content">
+                        <p>El continente se encuentra dividido en 4 reinos (Corazón, Trébol, Diamantes y Pica) en la cual cada uno mide y clasifica a los guerreros mágicos dependiendo de sus habilidad, mágia, destreza y habilidad.</p>
+                        <a href="#" class="read-more">Seguir leyendo...</a>
+                    </div>
+                </section>
+            </aside>
+
+        </main>
+
+        <footer class="footer">
+            <ul class="footer__links">
+                <li><a href="#">Nulla</a> |</li>
+                <li><a href="#">Pharetra</a> |</li>
+                <li><a href="#">Luctus</a> |</li>
+                <li><a href="#">Ipsum</a> |</li>
+                <li><a href="#">Proin</a> |</li>
+                <li><a href="#">Placerat</a></li>
+            </ul>
+            <div class="footer__copyright">
+                © Copyright Lorem Ipsum
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

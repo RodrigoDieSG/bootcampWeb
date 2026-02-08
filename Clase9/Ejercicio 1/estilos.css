@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: olive;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.descriptions {
+  font-size: 14px;
+  color: #333;
+}

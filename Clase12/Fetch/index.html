@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio con Fetch</title>
+    <link rel="stylesheet" href="style.css"> <!--Conexión con CSS-->
+</head>
+<body>
+
+    <main class="user-directory"> <!--Contenedor principal-->
+        <header class="user-directory__header"> <!--Encabezado-->
+            <h1 class="user-directory__title">Lista de Contactos</h1> <!--Título-->
+            <p class="user-directory__subtitle">Datos obtenidos mediante Fetch API</p> <!--Subtítulo-->
+        </header>
+
+        <section class="user-directory__controls"> <!--Controles-->
+            <button id="btnLoad" class="user-directory__button user-directory__button--fetch"> <!--Botón para cargar datos-->
+                Actualizar Lista <!--Botón para cargar datos-->
+            </button>
+        </section>
+
+        <ul id="userContainer" class="user-directory__list"> <!--Contenedor de usuarios-->
+            <!-- Los usuarios se cargarán aquí dinámicamente -->
+            </ul>
+    </main>
+
+    <script src="script.js"></script> <!--Conexión con JavaScript-->
+</body>
+</html>

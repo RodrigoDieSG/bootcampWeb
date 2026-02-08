@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Interfaz de Cajas Interactivas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="container" id="boxContainer">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="controls">
+    <button id="toggleColors">Toggle Colors</button>
+    <button id="toggleBorders">Toggle Rounded Borders</button>
+    <button id="addBox">Add a New Box</button>
+  </div>
+
+  <div class="descriptions">
+    <p><strong>Toggle Colors:</strong> Toggles the background color on and off for each box using CSS classes.</p>
+    <p><strong>Toggle Rounded Borders:</strong> Toggles the rounded-borders on and off for each box using CSS attributes.</p>
+    <p><strong>Add a New Box:</strong> Adds a new box to the container.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
