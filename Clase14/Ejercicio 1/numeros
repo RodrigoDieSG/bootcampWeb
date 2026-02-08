@@ -1,0 +1,29 @@
+# 1. Solicitar la entrada y convertirla en una lista de enteros
+entrada = input("Ingrese una lista de números enteros separados por comas: ")
+
+# Convertimos el string en una lista, quitamos espacios y transformamos a int
+numeros = [int(n.strip()) for n in entrada.split(",")]
+
+# 2. Mostrar la longitud
+longitud = len(numeros)
+print(f"Longitud de la lista: {longitud}")
+
+# 3. Calcular la suma
+suma_total = sum(numeros)
+print(f"Suma de todos los números en la lista: {suma_total}")
+
+# 4. Verificar presencia de un número
+busqueda = int(input("Ingrese un número para verificar su presencia en la lista: "))
+
+if busqueda in numeros:
+    indice = numeros.index(busqueda)
+    print(f"El número {busqueda} está presente en la posición {indice} de la lista")
+else:
+    print(f"El número {busqueda} no se encuentra en la lista.")
+
+# 5. Eliminar el último elemento y mostrar lista actualizada
+if numeros: # Verificamos que la lista no esté vacía antes de eliminar
+    numeros.pop()
+    print(f"Lista actualizada después de eliminar el último elemento: {numeros}")
+else:
+    print("La lista ya está vacía.")
