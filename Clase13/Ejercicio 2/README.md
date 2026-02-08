@@ -1,0 +1,1 @@
+En python puedes generar diferentes formas de programación para llegar a un solo resultado, desde la más sencilla como en el caso de este ejercicio de sumar cada una de las variables hasta 10; hasta formulas más complejas que permiten introducir más variables, de una forma más logica.
